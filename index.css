@@ -231,13 +231,12 @@ footer p {
     margin: auto 1rem;
   }
   .lebenslauf h2 {
-    font-size: 1.7rem;
-    margin: 0;
+    font-size: 1rem;
+    margin-top: 1rem;
   }
   .lebenslauf p {
     font-size: 1rem;
     padding: 0;
-    display: flow-root;
   }
 
   .image-wrapper {

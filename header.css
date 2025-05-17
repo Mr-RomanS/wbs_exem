@@ -184,7 +184,7 @@ nav ul li:hover::after {
 @media (max-width: 920px) {
   header {
     width: 100%;
-    height: auto;
+    height: 0;
     padding: 0;
   }
   header ul {
@@ -199,10 +199,13 @@ nav ul li:hover::after {
     background-color: white;
     text-align: start;
   }
+  summary:hover {
+    border-radius: 0;
+  }
   .mobile-menu {
     width: 100vw;
     margin: 0;
-    margin-top: 4rem;
+    margin-top: 6rem;
     padding: 0;
   }
 }
@@ -212,61 +215,30 @@ nav ul li:hover::after {
   a {
     -webkit-tap-highlight-color: transparent;
   }
-
   header {
     width: 100%;
-    height: 80px;
+    height: auto;
     background-color: white;
     position: fixed;
   }
-
-  summary {
-    padding: 0;
-    font-size: 2rem;
-    margin: 0;
-  }
   .mobile-menu {
+    margin-top: 3.5rem;
     width: 100vw;
     background-color: white;
-    padding: 0.5rem;
     position: relative;
     z-index: 999;
   }
-
-  .mobile-menu summary {
-    font-size: 1.5rem;
-    background-color: white;
-    padding: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  summary {
+    font-size: 2rem;
+  }
+  summary:hover {
+    border-radius: 0;
+    box-shadow: 0;
   }
 
   .mobile-menu nav {
     width: 100vw;
     background-color: white;
     padding: 1rem 0;
-  }
-
-  .mobile-menu ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .mobile-menu li {
-    width: 100%;
-    border-bottom: 1px solid #6b6868;
-  }
-
-  .mobile-menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    display: block;
-  }
-
-  summary {
-    border-radius: 0;
   }
 }

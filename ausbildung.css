@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+p {
+  font-family: "Zain", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+}
+.fa-solid.fa-bars,
+.svg-inline--fa.fa-bars.fa-solid {
+  display: none;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  padding: 0 5rem;
+  column-gap: 40px;
+  row-gap: 2rem;
+  padding: 0 2rem 4rem;
+  margin: 0 auto;
+}
+
+#Ausbildung {
+  height: 100%;
+  background-color: rgb(246, 246, 246);
+  border-radius: 5px;
+  padding: 2rem;
+  display: block;
+}
+#Ausbildung div {
+  width: 50%;
+  margin: auto 0;
+  margin-top: 4rem;
+}
+
+#Ausbildung img {
+  float: right;
+  width: 40%;
+  height: auto;
+  border-radius: 4px;
+  margin: 4rem 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5rem;
+  font-family: "Lexend", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+ul {
+  margin-left: 1.25rem;
+  list-style: disc;
+}
+
+li {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+strong {
+  color: #333;
+}
+
+@keyframes flash {
+  from {
+    background-color: #acaca8;
+  }
+  to {
+    background-color: rgb(246, 246, 246);
+  }
+}
+
+#Ausbildung:target {
+  animation: flash 1.3s ease;
+}
+
+@media (max-width: 800px) {
+  main {
+    height: auto;
+  }
+  #Ausbildung {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Ausbildung div {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+  }
+  #Ausbildung img {
+    float: none;
+    width: 80%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 0 5rem;
+}
+.lebenslauf {
+  padding: 1rem;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.box1 {
+  width: 50%;
+  margin: auto;
+}
+.box1 a {
+  text-decoration: none;
+  color: rgb(31, 123, 121);
+  padding: 0;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px black;
+  font-size: 1rem;
+}
+
+.lebenslauf h2 {
+  margin: 1rem 0;
+  font-size: 3.5rem;
+}
+
+.lebenslauf p {
+  width: 50%;
+  height: auto;
+  font-size: 1.2rem;
+}
+.box2 {
+  width: 50%;
+  height: 100vh;
+  padding: 0rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideUp 90s linear infinite;
+}
+
+.image-wrapper img {
+  box-shadow: 1px 1px 25px black;
+  width: 50%;
+  height: auto;
+  margin: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.berufliches-profil {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  z-index: 2;
+  margin-top: 100vh;
+  background-color: white;
+  padding: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: start;
+  border-bottom: 2px solid black;
+  background-color: rgb(246, 246, 246);
+}
+
+.berufliches-profil h2 {
+  height: auto;
+  font-size: 4rem;
+  margin: 6rem 0;
+}
+
+.berufliches-profil p {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.kenntnisse {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding: 1rem;
+  padding-top: 2rem;
+  background-color: rgb(246, 246, 246);
+}
+.kenntnisse article {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.kenntnisse h2 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.kenntnisse-box {
+  width: 100%;
+  height: auto;
+  font-size: 1.2rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  background-color: white;
+}
+
+.kenntnisse img {
+  text-align: start;
+  width: 40px;
+  height: auto;
+  margin-right: 0.2rem;
+}
+
+.kenntnisse h3 {
+  margin: 0rem 0.5rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.kenntnisse-box div {
+  width: auto;
+  height: auto;
+  font-size: 1.2rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.kenntnisse-box div p {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+footer p {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .lebenslauf {
+    width: 80%;
+    height: 80vh;
+    margin-top: 2rem;
+  }
+  .lebenslauf h2 {
+    font-size: 2.5rem;
+  }
+  .lebenslauf p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .image-wrapper img {
+    width: 80%;
+    height: auto;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 920px) {
+  main {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .lebenslauf {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+  }
+  .box1 {
+    margin: auto 1rem;
+  }
+  .lebenslauf h2 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  .lebenslauf p {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .image-wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .image-wrapper img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  .berufliches-profil {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .berufliches-profil h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .berufliches-profil p {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .kenntnisse {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .kenntnisse-box {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .kenntnisse-box div {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-top: 2px solid silver;
+    border-radius: 0;
+    padding-top: 0.5rem;
+  }
+}

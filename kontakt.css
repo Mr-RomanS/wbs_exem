@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 0 5rem;
+}
+
+#Kontakt {
+  background-color: #f6f6f6;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.kontakt-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.kontakt-text {
+  flex: 1 1 300px;
+  font-family: "Zain", sans-serif;
+  font-size: 1.2rem;
+}
+
+.kontakt-text h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.kontakt-text a {
+  color: #0057b8;
+  text-decoration: none;
+}
+
+.kontakt-bild {
+  flex: 1 1 300px;
+  text-align: right;
+}
+
+.kontakt-bild img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@keyframes flash {
+  from {
+    background-color: #acaca8;
+  }
+  to {
+    background-color: rgb(246, 246, 246);
+  }
+}
+
+#Kontakt:target {
+  animation: flash 1.5s ease-in-out;
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 760px) {
+  .kontakt-container {
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .kontakt-text {
+    flex: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

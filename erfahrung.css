@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.fa-solid.fa-bars,
+.svg-inline--fa.fa-bars.fa-solid {
+  display: none;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 40px;
+  row-gap: 2rem;
+  padding: 0 2rem 4rem;
+  margin: 0 auto;
+}
+
+main > section {
+  background-color: rgb(246, 246, 246);
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes flash {
+  from {
+    background-color: #acaca8;
+  }
+  to {
+    background-color: rgb(246, 246, 246);
+  }
+}
+
+#Berufserfahrung:target {
+  animation: flash 1.5s ease-in-out;
+  scroll-margin-top: 100px;
+}
+#Berufserfahrung {
+  display: block;
+  position: relative;
+}
+
+#Berufserfahrung img {
+  float: right;
+  width: 20%;
+  height: auto;
+  margin: 0 0 1rem 1rem;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5rem;
+  font-family: "Lexend", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #555;
+}
+h3 {
+  font-size: 1.1rem;
+  color: #222;
+}
+ul {
+  margin-left: 1.25rem;
+  list-style: disc;
+}
+
+li {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+strong {
+  color: #333;
+}
+@media (min-width: 900px) {
+  #Berufserfahrung {
+    grid-column: 1 / span 12;
+  }
+  #Projektmanager {
+    grid-column: 1 / span 6;
+  }
+  #Softwareentwickler {
+    grid-column: 7 / span 6;
+  }
+  #Ausbildung {
+    grid-column: 1 / span 12;
+  }
+}
+@media (max-width: 850px) {
+  main {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  main > section {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 900px) {
+  #Berufserfahrung img {
+    display: none;
+  }
+}

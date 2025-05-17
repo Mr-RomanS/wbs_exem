@@ -67,7 +67,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  animation: slideUp 90s linear infinite;
+  animation: slideUp 150s linear infinite;
 }
 
 .image-wrapper img {

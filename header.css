@@ -264,7 +264,9 @@ nav ul li:hover::after {
   }
   summary {
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem 0;
+    border-bottom: none;
+    background-color: rgba(255, 255, 255, 0.583);
   }
   summary:hover {
     border-radius: 0;

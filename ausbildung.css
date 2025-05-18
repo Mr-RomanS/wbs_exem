@@ -27,14 +27,14 @@ h2 {
 main {
   width: 100%;
   height: 90vh;
-  padding: 0 5rem;
+  padding: 2rem;
   column-gap: 40px;
   row-gap: 2rem;
   margin: 2rem auto 0;
 }
 
 #Ausbildung {
-  height: 100%;
+  height: auto;
   background-color: rgb(246, 246, 246);
   border-radius: 5px;
   padding: 2em;

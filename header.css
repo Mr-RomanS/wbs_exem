@@ -268,7 +268,6 @@ nav ul li:hover::after {
   }
   summary:hover {
     border-radius: 0;
-    box-shadow: 0;
   }
 
   .mobile-menu nav {

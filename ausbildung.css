@@ -31,7 +31,7 @@ main {
   column-gap: 40px;
   row-gap: 2rem;
   padding: 0 2rem 4rem;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 
 #Ausbildung {
@@ -40,6 +40,9 @@ main {
   border-radius: 5px;
   padding: 2rem;
   display: block;
+}
+#Ausbildung h2 {
+  margin: 0.5rem auto 2rem;
 }
 #Ausbildung div {
   width: 50%;

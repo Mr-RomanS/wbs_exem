@@ -30,7 +30,6 @@ main {
   padding: 0 5rem;
   column-gap: 40px;
   row-gap: 2rem;
-  padding: 0 2rem 4rem;
   margin: 2rem auto 0;
 }
 
@@ -38,8 +37,9 @@ main {
   height: 100%;
   background-color: rgb(246, 246, 246);
   border-radius: 5px;
-  padding: 4rem;
+  padding: 2em;
   display: block;
+  margin-top: 4rem;
 }
 #Ausbildung h2 {
   margin: 0.5rem auto 2rem;

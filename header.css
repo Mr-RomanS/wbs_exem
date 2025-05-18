@@ -253,6 +253,7 @@ nav ul li:hover::after {
     width: 100%;
     height: auto;
     position: fixed;
+    background-color: transparent;
   }
   .mobile-menu {
     margin-top: 3.5rem;
@@ -263,7 +264,7 @@ nav ul li:hover::after {
   }
   summary {
     font-size: 1.5rem;
-    padding: 0.5rem 2rem;
+    padding: 1rem;
   }
   summary:hover {
     border-radius: 0;

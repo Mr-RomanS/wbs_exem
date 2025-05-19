@@ -52,7 +52,7 @@ main > section {
   display: block;
   position: relative;
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 #Berufserfahrung img {
@@ -93,6 +93,22 @@ li {
 }
 strong {
   color: #333;
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  top: 0;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+footer p {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
 }
 @media (min-width: 900px) {
   #Berufserfahrung {
